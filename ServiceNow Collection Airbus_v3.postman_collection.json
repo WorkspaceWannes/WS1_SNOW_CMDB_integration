@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "acb2e8bb-2b33-4ecb-a990-fc6ac286b76c",
+		"name": "ServiceNow Collection Airbus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4653580"
+	},
+	"item": [
+		{
+			"name": "get computer details",
+			"id": "getcomputerdetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "cbK3GIvIbkIXvlAP5iuTeJoDBCeW6CsolEPl1eniY24iKzDi23Cr2f2TarKv47o6wVtRUd9Zk2MYMmtkaVIGQA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://devXXXXXX.service-now.com/api/now/cmdb/instance/cmdb_ci_computer/abbd712f97846110a29778300153afaf",
+					"protocol": "https",
+					"host": [
+						"devXXXXXX",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"cmdb",
+						"instance",
+						"cmdb_ci_computer",
+						"abbd712f97846110a29778300153afaf"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get computer details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devXXXXXX.service-now.com/api/now/cmdb/instance/cmdb_ci_computer/abbd712f97846110a29778300153afaf",
+							"protocol": "https",
+							"host": [
+								"devXXXXXX",
+								"service-now",
+								"com"
+							],
+							"path": [
+								"api",
+								"now",
+								"cmdb",
+								"instance",
+								"cmdb_ci_computer",
+								"abbd712f97846110a29778300153afaf"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server-Timing",
+							"value": "sem_wait;dur=0, sesh_wait;dur=0"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user_route=glide.de35384f8b811157f4bdcc3d7d456a77; Max-Age=2147483647; Expires=Sun, 24-Jun-2091 11:01:00 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_session_store=6113B08197D36110A29778300153AF75; Max-Age=300; Expires=Tue, 06-Jun-2023 07:51:53 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "X-Is-Logged-In",
+							"value": "true"
+						},
+						{
+							"key": "X-Transaction-ID",
+							"value": "de2370c17e21"
+						},
+						{
+							"key": "X-INBOUND-RELATION-COUNT",
+							"value": "0"
+						},
+						{
+							"key": "X-OUTBOUND-RELATION-COUNT",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-store,no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store,must-revalidate,max-age=-1"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 07:46:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=70"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "ServiceNow"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"outbound_relations\": [],\n        \"attributes\": {\n            \"os_address_width\": \"\",\n            \"attested_date\": \"\",\n            \"operational_status\": \"1\",\n            \"os_service_pack\": \"\",\n            \"cpu_core_thread\": \"\",\n            \"cpu_manufacturer\": {\n                \"display_value\": \"\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/core_company/VMware\",\n                \"value\": \"VMware\"\n            },\n            \"sys_updated_on\": \"2023-06-06 07:43:46\",\n            \"discovery_source\": \"SG-WorkspaceONEUEM\",\n            \"first_discovered\": \"2023-06-01 21:21:51\",\n            \"due_in\": \"\",\n            \"invoice_number\": \"\",\n            \"gl_account\": \"\",\n            \"sys_created_by\": \"admin\",\n            \"warranty_expiration\": \"\",\n            \"ram\": \"0\",\n            \"cpu_name\": \"\",\n            \"cpu_speed\": \"\",\n            \"owned_by\": \"\",\n            \"checked_out\": \"\",\n            \"sys_domain_path\": \"/\",\n            \"disk_space\": \"\",\n            \"object_id\": \"\",\n            \"business_unit\": \"\",\n            \"maintenance_schedule\": \"\",\n            \"cost_center\": \"\",\n            \"attested_by\": \"\",\n            \"dns_domain\": \"\",\n            \"assigned\": \"\",\n            \"purchase_date\": \"\",\n            \"life_cycle_stage\": \"\",\n            \"short_description\": \"\",\n            \"cd_speed\": \"\",\n            \"floppy\": \"\",\n            \"managed_by\": \"\",\n            \"os_domain\": \"\",\n            \"last_discovered\": \"2023-06-06 03:45:11\",\n            \"can_print\": \"false\",\n            \"sys_class_name\": \"cmdb_ci_computer\",\n            \"manufacturer\": {\n                \"display_value\": \"VMware\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/core_company/fabd712f97836110a29778300153af0f\",\n                \"value\": \"fabd712f97836110a29778300153af0f\"\n            },\n            \"cpu_count\": \"2\",\n            \"vendor\": \"\",\n            \"life_cycle_stage_status\": \"\",\n            \"model_number\": \"\",\n            \"assigned_to\": \"\",\n            \"start_date\": \"\",\n            \"os_version\": \"10.0.22621\",\n            \"serial_number\": \"VMON58NshZh1\",\n            \"cd_rom\": \"false\",\n            \"support_group\": \"\",\n            \"unverified\": \"false\",\n            \"correlation_id\": \"\",\n            \"attributes\": \"\",\n            \"asset\": {\n                \"display_value\": \"VMware VMware7,1\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/alm_asset/c39f35af97836110a29778300153af16\",\n                \"value\": \"c39f35af97836110a29778300153af16\"\n            },\n            \"form_factor\": \"\",\n            \"cpu_core_count\": \"3\",\n            \"skip_sync\": \"false\",\n            \"most_frequent_user\": \"\",\n            \"attestation_score\": \"\",\n            \"sys_updated_by\": \"admin\",\n            \"sys_created_on\": \"2023-06-01 21:21:51\",\n            \"sys_domain\": {\n                \"display_value\": \"global\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/sys_user_group/global\",\n                \"value\": \"global\"\n            },\n            \"cpu_type\": \"\",\n            \"install_date\": \"\",\n            \"asset_tag\": \"\",\n            \"hardware_substatus\": \"\",\n            \"fqdn\": \"\",\n            \"change_control\": \"\",\n            \"internet_facing\": \"true\",\n            \"delivery_date\": \"\",\n            \"hardware_status\": \"installed\",\n            \"install_status\": \"1\",\n            \"supported_by\": \"\",\n            \"name\": \"workspace1s\",\n            \"subcategory\": \"Computer\",\n            \"default_gateway\": \"\",\n            \"virtual\": \"true\",\n            \"chassis_type\": \"\",\n            \"assignment_group\": \"\",\n            \"managed_by_group\": \"\",\n            \"sys_id\": \"abbd712f97836110a29778300153afaf\",\n            \"po_number\": \"\",\n            \"checked_in\": \"\",\n            \"sys_class_path\": \"/!!/!2/!(\",\n            \"mac_address\": \"\",\n            \"company\": {\n                \"display_value\": \"\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/core_company/wsolab\",\n                \"value\": \"wsolab\"\n            },\n            \"justification\": \"\",\n            \"department\": \"\",\n            \"cost\": \"\",\n            \"comments\": \"\",\n            \"os\": \"Windows 10\",\n            \"attestation_status\": \"Not Yet Reviewed\",\n            \"cmdb_ot_entity\": \"\",\n            \"sys_mod_count\": \"34\",\n            \"monitor\": \"false\",\n            \"model_id\": {\n                \"display_value\": \"VMware VMware7,1\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/cmdb_model/febd712f97836110a29778300153af11\",\n                \"value\": \"febd712f97836110a29778300153af11\"\n            },\n            \"ip_address\": \"\",\n            \"duplicate_of\": \"\",\n            \"sys_tags\": \"\",\n            \"cost_cc\": \"USD\",\n            \"order_date\": \"\",\n            \"schedule\": \"\",\n            \"environment\": \"\",\n            \"due\": \"\",\n            \"attested\": \"false\",\n            \"location\": {\n                \"display_value\": \"\",\n                \"link\": \"https://devXXXXXX.service-now.com/api/now/table/cmn_location/Belgium\",\n                \"value\": \"Belgium\"\n            },\n            \"category\": \"Hardware\",\n            \"fault_count\": \"0\",\n            \"lease_id\": \"123456\"\n        },\n        \"inbound_relations\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update computer scripted rest v4",
+			"id": "updatecomputerscriptedrestv4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d-oOIRA0IWUdJ4-ugxR9xKIa-DE7adAXuJsinO62ac6iX9fInNb4t86w__huPYOLLcECMeBb0TgLDPUcrdPGmg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type", 
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text" 
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial_number\": \"\",\r\n    \"cpu_core_count\": \"\",\r\n    \"cpu_count\": \"\",\r\n    \"cpu_speed\": \"\",\r\n    \"cpu_type\": \"\",\r\n    \"cpu_name\": \"\",\r\n    \"chassis_type\": \"\",\r\n    \"discovery_source\": \"SG-WorkspaceONEUEM\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://devXXXXXX.service-now.com/api/460707/ws1_sensor_data/patch",
+					"protocol": "https",
+					"host": [
+						"devXXXXXX",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"460707",
+						"ws1_sensor_data",
+						"patch"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update computer scripted rest v4",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial_number\": \"VMON58NshZh1\",\r\n    \"cpu_core_count\": \"3\",\r\n    \"cpu_count\": \"2\",\r\n    \"discovery_source\": \"SG-WorkspaceONEUEM\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devXXXXXX.service-now.com/api/460707/ws1_sensor_data/post",
+							"protocol": "https",
+							"host": [
+								"devXXXXXX",
+								"service-now",
+								"com"
+							],
+							"path": [
+								"api",
+								"460707",
+								"ws1_sensor_data",
+								"patch"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server-Timing",
+							"value": "sem_wait;dur=0, sesh_wait;dur=0"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_user_route=glide.de35384f8b811157f4bdcc3d7d456a77; Max-Age=2147483647; Expires=Sun, 24-Jun-2091 10:57:53 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "glide_session_store=8262344197176110A29778300153AFE0; Max-Age=300; Expires=Tue, 06-Jun-2023 07:48:46 GMT; Path=/; Secure; HttpOnly"
+						},
+						{
+							"key": "X-Is-Logged-In",
+							"value": "true"
+						},
+						{
+							"key": "X-Transaction-ID",
+							"value": "e47274450c41"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-store,no-cache"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store,must-revalidate,max-age=-1"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 07:43:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=70"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "ServiceNow"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"body\": {\n            \"message\": \"Update Successful!\",\n            \"detail\": \"device VMON58NshZh1 updated successfully\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
