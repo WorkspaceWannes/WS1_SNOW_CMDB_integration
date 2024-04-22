@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "acb2e8bb-2b33-4ecb-a990-fc6ac286b76c",
-		"name": "ServiceNow Collection Airbus",
+		"name": "ServiceNow Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "4653580"
 	},
@@ -21,7 +21,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "cbK3GIvIbkIXvlAP5iuTeJoDBCeW6CsolEPl1eniY24iKzDi23Cr2f2TarKv47o6wVtRUd9Zk2MYMmtkaVIGQA",
+							"value": "cbK3GIvIbkIXvlAP5iuTeJoDBCeW6CsolEPl1eniY25iKzDi23Cr2f2TarKv47o6wVtRUd9Zk2MYMmtkaVIGQA",
 							"type": "string"
 						}
 					]
